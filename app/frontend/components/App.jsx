@@ -1,20 +1,19 @@
 import React from 'react';
-import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import MainLayout from "~/Layouts/MainLayout.jsx";
+import Landing from "../Layouts/Landing/Landing";
 
 const App = () => {
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        fetch('/api/v1/articles')
-            .then((res) => res.json())
-            .then((data) => setData(data));
-    }, []);
-    return (
-        <div>
-            Articles
-            {data.map(({ title, body }) => <div>{title}{body}</div>)}
-        </div>
-    );
-};
+  return(
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainLayout />} />
+          <Route index element={<Landing />} />
+        </Routes>
+      </Router>
+    </>
+  )
+}
 
 export default App;
