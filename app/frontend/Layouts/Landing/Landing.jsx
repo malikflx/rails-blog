@@ -1,19 +1,11 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-const Landing = () => {
-    const [data, setData] = useState([]);
+import Hero from "~/Layouts/Hero/Hero.jsx";
 
-    useEffect(() => {
-      fetch('/api/v1/articles')
-        .then((res) => res.json())
-        .then((data) => setData(data));
-    }, [])
+const Landing = () => {
+
     return (
       <>
-        <div className="landing">
-          Articles
-          { data.map(({ title, body }) => <div>{ title }{ body }</div>) }
-        </div>
+        <Hero />
       </>
     )
 }
