@@ -54,7 +54,7 @@ const ContactForm = () => {
           alert("Your message has been sent successfully!");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.log("FAILED...", error);
           alert("There was an error sending your message. Please try again.");
         }
       );
