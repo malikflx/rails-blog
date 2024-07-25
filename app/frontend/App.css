@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #5bc0eb;
+    --secondary-color: #1e1e24;
+    --alt-font-color: #828282;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    font-weight: 300;
+}

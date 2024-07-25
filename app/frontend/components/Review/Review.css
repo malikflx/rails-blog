@@ -1,0 +1,16 @@
+.client-highlight {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    font-weight: 400;
+}
+
+.review-client {
+    margin: 2rem 0 0 1rem;
+}
+
+.review-client-name {
+    font-style: none;
+    font-weight: 600;
+    color: var(--main-color);
+    line-height: 2;
+}

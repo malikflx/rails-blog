@@ -2,6 +2,7 @@
   "private": true,
   "type": "module",
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
     "vite": "^5.3.4",
     "vite-plugin-ruby": "^5.0.0"
   },
@@ -9,8 +10,15 @@
     "dev": "bin/vite dev"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "emailjs": "^4.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.25.1"
+    "react-router-dom": "^6.25.1",
+    "react-transition-group": "^4.4.5",
+    "styled-components": "^6.1.12"
   }
 }

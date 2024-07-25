@@ -1,0 +1,77 @@
+.snapshot {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.snapshot-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+    padding-right: 0.5em;
+    line-height: 1.2;
+}
+
+.snapshot-subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.snapshot-description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.snapshot-description p {
+    padding-bottom: 1em;
+    line-height: 1.5;
+}
+
+.spotlight-quote {
+    font-size: 2rem;
+    padding: 0 1.5em;
+}
+
+.snapshot-cta {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+a .snapshot-cta-button {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1em 0 0.5em 0;
+    border-radius: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    .snapshot {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 6.5em 0;
+        font-size: 2rem;
+    }
+
+    .snapshot-title {
+        font-size: 3.5rem;
+    }
+
+    .spotlight-quote {
+        font-size: 3rem;
+    }
+
+    .snapshot-subtitle {
+        font-size: 2rem;
+    }
+
+    a .snapshot-cta-button {
+        width: 35%;
+    }
+}

@@ -1,6 +1,9 @@
 import React from 'react';
 import { useEffect, useState, useRef } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
+import PrimaryButton from "~/components/Buttons/PrimaryButton.jsx";
+import './Hero.css';
+import SecondaryButton from "~/components/Buttons/SecondaryButton.jsx";
 
 const Hero = () => {
   const headlineRef = useRef(null);
@@ -61,12 +64,11 @@ const Hero = () => {
           </div>
         </div>
         <div className="cta">
-          <RouterLink to="/blog">See Blog</RouterLink>
           <RouterLink to="/contact">
-              Get a Website
+            <PrimaryButton className="hero-cta-button">Get a Website</PrimaryButton>
           </RouterLink>
           <RouterLink to="/about">
-              Meet Malik
+            <SecondaryButton className="hero-cta-button">Meet Malik</SecondaryButton>
           </RouterLink>
         </div>
       </div>

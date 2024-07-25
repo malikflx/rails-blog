@@ -1,0 +1,159 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    /* font-size: 1.5rem; */
+}
+
+.work-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.work-item {
+    width: 100%;
+    margin: 2rem;
+    position: relative;
+    right: 2em;
+}
+
+.work-item img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.awdc-image {
+    border: 1em solid #00bcc9;
+    background-color: #fff;
+}
+
+.awdc-image img {
+    padding: 8rem 4rem 8rem 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 1.5em;
+    line-height: 1.3;
+    top: 0;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.pv-content {
+    background-color: rgba(213, 175, 52, 0.8);
+    transition: 0.6s;
+    opacity: 0;
+}
+
+.awdc-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 188, 201, 0.8);
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.pv-image {
+    border: 1em solid #d5af34;
+}
+
+.content:hover,
+.pv-content:hover,
+.awdc-content:hover {
+    opacity: 1;
+}
+
+.content h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.content p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.content .work-button button {
+    margin-top: 2em;
+    border-radius: none;
+}
+
+.content,
+.pv-content,
+.awdc-content > * {
+    transform: translateY(1em);
+    transition: transform 0.6s;
+}
+
+.content:hover,
+.pv-content:hover,
+.awdc-content:hover > * {
+    transform: translateY(0);
+}
+
+.work-subheading h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.4em;
+}
+
+.work-subheading p {
+    color: #767676;
+}
+
+@media only screen and (min-width: 1024px) {
+    .work {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 7.5em 0;
+        align-items: first baseline;
+    }
+
+    .work-title {
+        font-size: 4rem;
+    }
+
+    .work-container {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .selected-work {
+        width: 35%;
+    }
+
+    .content p {
+        margin-bottom: 2em;
+    }
+}
